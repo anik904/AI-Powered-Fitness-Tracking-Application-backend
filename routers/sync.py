@@ -26,10 +26,6 @@ async def sync_upload(
     """
     Upload the full app state from the mobile device.
 
-    - Workouts are upserted (deduplicated by client_id).
-    - Goals are upserted (one per exercise_type per user).
-    - Challenge state is upserted (one per user).
-
     This is the primary endpoint the mobile app calls during "Sync Now".
     """
 

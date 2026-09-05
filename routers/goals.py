@@ -40,8 +40,7 @@ async def create_or_update_goal(
 ):
     """
     Create or update a goal for an exercise type.
-    If a goal already exists for this exercise type, it gets updated (upsert).
-    This mirrors the Flutter app's saveGoal behavior.
+    If a goal already exists for this exercise type, it gets updated.
     """
     # Validate exercise type
     try:

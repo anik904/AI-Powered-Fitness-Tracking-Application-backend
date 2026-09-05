@@ -12,7 +12,6 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-# Dynamic engine kwargs based on dialect
 engine_kwargs = {}
 if settings.DATABASE_URL.startswith("sqlite"):
     engine_kwargs["connect_args"] = {"check_same_thread": False}

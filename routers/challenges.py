@@ -40,7 +40,7 @@ async def start_challenge(
 ):
     """
     Start a new 30-day challenge.
-    If one already exists, it restarts with a new start_date (mirrors restartChallenge).
+    If one already exists, it restarts with a new start_date.
     """
     now = datetime.now(timezone.utc)
 
